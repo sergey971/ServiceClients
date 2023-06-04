@@ -12,30 +12,30 @@
     <div class="wrapper">
         <div class="container">
             <h1>Тестовое задание на php-разработчика</h1>
-            <form action="#">
+            <form action="/" id="myForm" method="POST">
                 <h2>Клиент (физическое лицо)</h2>
                 <div class="fis__face">
                     <div class="fis__face__box">
-                        <label for="">ФИО</label>
-                        <input type="text" placeholder="ФИО" name="fioFizCace">
-                        <div class="error__fis__face__box"></div>
+                        <label for="fioFizCace">ФИО</label>
+                        <input type="text" placeholder="ФИО" name="fioFizCace" id="fioFizCace">
+                        <div class="errorMessage"></div>
                     </div>
                     <div class="fis__face__box">
                         <label for="">ИНН</label>
-                        <input type="text" placeholder="ИНН" name="fioFizInn">
-                        <div class="error__fis__inn__box"></div>
+                        <input type="text" placeholder="ИНН" name="fioFizInn" id="fioFizInn">
+                        <div class="errorMessage"></div>
                     </div>
                     <div class="fis__face__box">
                         <label for="">Дата рождения</label>
-                        <input type="text" placeholder="Дата рождения" name="fioFizDataOfBirth">
-                        <div class="error__fis__fioFizDataOfBirth__box"></div>
+                        <input type="text" placeholder="Дата рождения" name="fioFizDataOfBirth" id="fioFizDataOfBirth">
+                        <div class="errorMessage"></div>
                     </div>
                     <div class="fis__face__box">
                         <label for="">Паспортные данные</label>
-                        <input type="text" placeholder="серия" name="fioFizSeris">
-                        <input type="text" placeholder="номер" name="fioFizNumber">
-                        <input type="text" placeholder="дата выдачи" name="fioFizPassport">
-                        <div class="error__fis__fioFizCace__box"></div>
+                        <input type="text" placeholder="серия" name="fioFizSeris" id="fioFizSeris">
+                        <input type="text" placeholder="номер" name="fioFizNumber" id="fioFizNumber">
+                        <input type="text" placeholder="дата выдачи" name="fioFizPassport" id="fioFizPassport">
+                        <div class="errorMessage"></div>
                     </div>
                 </div>
                 <h2>Клиент (юридическое лицо)</h2>
@@ -44,41 +44,41 @@
                         <h4>Данные руководителя</h4>
                         <div class="enttity__face__box">
                             <label for="">ФИО</label>
-                            <input type="text" placeholder="ФИО" name="fioenttityCace">
-                            <div class="error__fis__face__box"></div>
+                            <input type="text" placeholder="ФИО" name="fioenttityCace" id="fioFizPassport">
+                            <div class="errorMessage"></div>
                         </div>
                         <div class="enttity__face__box">
                             <label for="">ИНН</label>
-                            <input type="text" placeholder="ИНН" name="fioenttityInn">
-                            <div class="error__fis__inn__box"></div>
+                            <input type="text" placeholder="ИНН" name="fioenttityInn" id="fioenttityInn">
+                            <div class="errorMessage"></div>
                         </div>
                     </div>
                     <h4>Данные организации</h4>
                     <div class="enttity__company__row">
                         <div class="enttity__company__box">
                             <label for="">Наименование</label>
-                            <input type="text" placeholder="Наименование" name="name-company">
-                            <div class="error__enttity__name-company__box"></div>
+                            <input type="text" placeholder="Наименование" name="name-company" id="name-company">
+                            <div class="errorMessage"></div>
                         </div>
                         <div class="enttity__company__box">
                             <label for="">Адрес</label>
-                            <input type="text" placeholder="Адрес" name="addres-company">
-                            <div class="error__enttity__addres__box"></div>
+                            <input type="text" placeholder="Адрес" name="addres-company" id="addres-company">
+                            <div class="errorMessage"></div>
                         </div>
                         <div class="enttity__company__box">
                             <label for="">ОГРН</label>
-                            <input type="text" placeholder="ОГРН" name="ОГРН-company">
-                            <div class="error__enttity__ogrn__box"></div>
+                            <input type="text" placeholder="ОГРН" name="ОГРН-company" id="ОГРН-company">
+                            <div class="errorMessage"></div>
                         </div>
                         <div class="enttity__company__box">
                             <label for="">ИНН</label>
-                            <input type="text" placeholder="ИНН" name="inn-company">
-                            <div class="error__enttity__inn__box"></div>
+                            <input type="text" placeholder="ИНН" name="inn-company" id="inn-company">
+                            <div class="errorMessage"></div>
                         </div>
                         <div class="enttity__company__box">
                             <label for="">КПП</label>
-                            <input type="text" placeholder="КПП" name="kpp-company">
-                            <div class="error__enttity__kpp__box"></div>
+                            <input type="text" placeholder="КПП" name="kpp-company" id="kpp-company">
+                            <div class="errorMessage"></div> 
                         </div>
                     </div>
                 </div>
@@ -87,38 +87,65 @@
                     <div class="product__row">
                         <div class="enttity__face__box">
                             <label for="">Дата открытия</label>
-                            <input type="date" name="date-open">
-                            <div class="error__enttity__dateOpen__box"></div>
+                            <input type="date" name="date-open" id="date-open">
+                            <div class="errorMessage"></div>                       
+
                         </div>
                         <div class="enttity__face__box">
                             <label for="">Дата закрытия</label>
-                            <input type="date" name="date-close">
-                            <div class="error__enttity__dateClose__box"></div>
+                            <input type="date" name="date-close" id="date-close">
+                            <div class="errorMessage"></div>
                         </div>
                         <div class="enttity__face__box">
                             <label for="">Срок (в месяцах)</label>
-                            <input type="text" name="srock">
-                            <div class="error__enttity__srock__box"></div>
+                            <input type="text" name="srock" id="srock">
                         </div>
                         <div class="enttity__face__box">
                             <h5>График платежей<h5>
                             <label for="innuitivnay">Аннуитетный
                                 <input type="checkbox" name="innuitivnay" id="innuitivnay">
+                                <div class="errorMessage"></div>
                             </label>
                             <label for="diffiricionay">Дифференцированный
                                 <input type="checkbox" name="diffiricionay" id="diffiricionay">
+                                <div class="errorMessage"></div>
                             </label>
                             <label for="">Сумма
-                                <input type="number">
+                                <input type="number" name="number" id="number">
+                                <div class="errorMessage"></div>
                             </label>
-                            <div class="error__enttity__srock__box"></div>
                         </div>
                     </div>
                 </div>
-                <h2>Продукт ((вклад):):</h2>
+                <h2>Продукт (вклад):</h2>
+                <div class="product__vklad__row">
+                    <div class="enttity__vklad__face__box">
+                        <label for="">Дата открытия</label>
+                        <input type="date" name="date-openVklad" id="date-openVklad">
+                        <div class="errorMessage"></div>
+                    </div>
+                    <div class="enttity__vklad__face__box">
+                        <label for="">Дата закрытия</label>
+                        <input type="date" name="date-closnVklad" id="date-closnVklad">
+                        <div class="errorMessage"></div>
+                    </div>
+                    <div class="enttity__vklad__face__box">
+                        <label for="">Срок (в месяцах)</label>
+                        <input type="text" name="srock" id="srock">
+                        <div class="errorMessage"></div>
+                    </div>
+                    <div class="enttity__vklad__face__box">
+                        <label for="">Ставка
+                            <input type="number" name="stavka" id="stavka">
+                            <div class="errorMessage"></div>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" id="btnForm" class="btnForm">Отправить</button>
             </form>
         </div>
     </div>
+    <script src="./js/main.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

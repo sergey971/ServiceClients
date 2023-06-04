@@ -1,0 +1,41 @@
+.errorMessage {
+    margin-top: .3rem;
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.fis__face__box.success input {
+    border-color: #09c372;
+    outline: none;
+
+}
+.fis__face__box.error input {
+    border-color: #f2070e;
+}
+.enttity__company__box.success input {
+    border-color: #09c372;
+    outline: none;
+
+}
+
+.enttity__company__box.error input {
+    border-color: #f2070e;
+}
+
+.enttity__face__box.success input {
+    border-color: #09c372;
+    outline: none;
+
+}
+.enttity__face__box.error input {
+    border-color: #f2070e;
+}
+.enttity__vklad__face__box.success input {
+    border-color: #09c372;
+    outline: none;
+
+}
+.enttity__vklad__face__box.error input {
+    border-color: #f2070e;
+}
