@@ -1,86 +1,48 @@
-const myForm = document.getElementById('myForm');
-myForm.addEventListener('submit', (event) =>{
-    event.preventDefault();
+const form = document.getElementById('form');
 
-    const regex = /^[0-9]*$/;
-    const fioFizCace = myForm.elements.fioFizCace.value.trim();
-    const fioFizCaceError = (document.querySelector('#fioFizCace + .errorMessage'));
-    const InputfioFizCace = (document.getElementById('fioFizCace'));
-    
-    if( fioFizCace === ''){
-        fioFizCaceError.textContent = 'Заполните ФИО';
-        InputfioFizCace.parentNode.classList.add('error');
-        InputfioFizCace.parentNode.classList.remove('success');
-    }
-    else{
-        fioFizCaceError.textContent = '';
-        InputfioFizCace.parentNode.classList.add('success');
-        InputfioFizCace.parentNode.classList.remove('error');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    }
 
-    const fioFizInn = myForm.elements.fioFizInn.value.trim();
-    const fioFizInnError = (document.querySelector('#fioFizInn + .errorMessage'));
-    const InputfioFizInn = (document.getElementById('fioFizInn'));
-
-    if(fioFizInn === ''){
-        fioFizInnError.textContent = 'Заполните ИНН';
-        InputfioFizInn.parentNode.classList.add('error');
-        InputfioFizInn.parentNode.classList.add('success');
-
-    }
-    else if(!regex.test(fioFizInn)){
-        fioFizInnError.textContent = 'Заполните корректноы';
-        InputfioFizInn.parentNode.classList.add('error');
-        InputfioFizInn.parentNode.classList.add('success');
-    }
-    else{
-        fioFizInnError.textContent = '';
-        InputfioFizInn.parentNode.classList.add('error');
-        InputfioFizInn.parentNode.classList.add('success');
-    }
-
-    const fioenttityCace = myForm.elements.fioenttityCace.value.trim();
-    const fioenttityCaceError = (document.querySelector('#fioenttityCace + .errorMessage'));
-    const InputfioenttityCace = (document.getElementById('fioenttityCace'));
-
-    if(fioenttityCace === ''){
-      fioenttityCaceError.textContent = 'Заполните имя';
-      InputfioenttityCace.parentNode.classList.add('error');
-      InputfioenttityCace.parentNode.classList.add('success');
-    }
-    else{
-      fioenttityCaceError.textContent = '';
-      InputfioenttityCace.parentNode.classList.add('error');
-      InputfioenttityCace.parentNode.classList.add('success');
-    }
-     const fioenttityInn = myForm.elements.fioenttityInn.value.trim();
-     const fioenttityInnError = document.querySelector('#fioenttityInn + .errorMessage');
-     const InputfioenttityInn = document.getElementById('fioenttityInn');
-
-     if(fioenttityInn === ''){
-      fioenttityInnError.textContent = 'Ввидите ИНН юр-лица';
-      InputfioenttityInn.parentNode.classList.add('error');
-      InputfioenttityInn.parentNode.classList.add('success');
-     }
-     else{
-      fioenttityInnError.textContent = '';
-      InputfioenttityInn.parentNode.classList.add('error');
-      InputfioenttityInn.parentNode.classList.add('success');
-     }
-
-     const nameCompany = myForm.elements.nameCompany.value.trim();
-     const nameCompanyError = document.querySelector('#nameCompany + .errorMessage');
-     const InputnameCompany = document.getElementById('nameCompany');
-
-     if (nameCompany === ''){
-      nameCompanyError.textContent = 'ВВидите название компании';
-      InputnameCompany.parentNode.classList.add('error');
-      InputnameCompany.parentNode.classList.add('success');
-     }
-     else{
-      InputnameCompany.parentNode.classList.add('error');
-      InputnameCompany.parentNode.classList.add('success');
-     }
-
+validate();
 });
+
+
+function validate(){
+    // Получение значений полей для клиента (физическое лицо)
+let fioFizCace = document.getElementById("fioFizCace").value.trim();
+let fioFizInn = document.getElementById("fioFizInn").value.trim();
+let fioFizDataOfBirth = document.getElementById("fioFizDataOfBirth").value.trim();
+let fioFizSeris = document.getElementById("fioFizSeris").value.trim();
+let fioFizNumber = document.getElementById("fioFizNumber").value.trim();
+let fioFizPassport = document.getElementById("fioFizPassport").value.trim();
+
+// Получение значений полей для клиента (юридическое лицо)
+let fioenttityCace = document.getElementById("fioenttityCace").value.trim();
+let fioenttityInn = document.getElementById("fioenttityInn").value.trim();
+
+// Получение значений полей для организации
+let nameCompany = document.getElementById("nameCompany").value.trim();
+let addresСompany = document.getElementById("addresСompany").value.trim();
+let ogrncompany = document.getElementById("Ogrncompany").value.trim();
+let innCompany = document.getElementById("innCompany").value.trim();
+let kpCompany = document.getElementById("kpCompany").value.trim();
+
+// Получение значений полей для продукта (кредит)
+let dateOpen = document.getElementById("dateOpen").value.trim();
+let dateClose = document.getElementById("dateClose").value.trim();
+let creditSrock = document.getElementById("creditSrock").value.trim();
+let innuitivnay = document.getElementById("innuitivnay").checked;
+let diffiricionay = document.getElementById("diffiricionay").checked;
+let number = document.getElementById("number").value.trim();
+
+// Получение значений полей для продукта (вклад)
+let dateOpenVklad = document.getElementById("dateOpenVklad").value.trim();
+let dateCloseVklad = document.getElementById("datecСloseVklad").value.trim();
+let srockVklad = document.getElementById("srockVklad").value.trim();
+let stavka = document.getElementById("stavka").value.trim();
+
+if (fioFizCace === '') {
+    
+}
+}
