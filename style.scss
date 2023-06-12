@@ -2,40 +2,16 @@
     margin-top: .3rem;
     font-size: .9rem;
     font-weight: 600;
-    font-family: monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f2070e;
 }
 
-.fis__face__box.success input {
+.input__box.success input {
     border-color: #09c372;
     outline: none;
 
 }
-.fis__face__box.error input {
-    border-color: #f2070e;
-}
-.enttity__company__box.success input {
-    border-color: #09c372;
-    outline: none;
-
-}
-
-.enttity__company__box.error input {
+.error.input__box input {
     border-color: #f2070e;
 }
 
-.enttity__face__box.success input {
-    border-color: #09c372;
-    outline: none;
-
-}
-.enttity__face__box.error input {
-    border-color: #f2070e;
-}
-.enttity__vklad__face__box.success input {
-    border-color: #09c372;
-    outline: none;
-
-}
-.enttity__vklad__face__box.error input {
-    border-color: #f2070e;
-}
