@@ -22,15 +22,15 @@
                     <legend>Personalia:</legend>
                     <div class="input__box">
                         <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="fname">
+                        <input data-required="true" type="text" id="fname" name="fname">
                     </div>
                     <div class="input__box">
                         <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lname">
+                        <input data-max-length="6" data-min-length="2" type="text" id="lname" name="lname">
                     </div>
                     <div class="input__box">    
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
+                        <input data-required="true"  type="email" id="email" name="email">
                     </div>
                     <div class="input__box">
                         <label for="birthday">Birthday:</label>
